@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Mre.Sb.Cita</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Mre.Sb.Appointment.Application\Mre.Sb.Appointment.Application.csproj" />
+    <ProjectReference Include="..\Mre.Sb.Appointment.Domain.Tests\Mre.Sb.Appointment.Domain.Tests.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Cita\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cita\" />
+  </ItemGroup>
+</Project>

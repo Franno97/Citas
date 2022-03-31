@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Mre.Sb.Cita</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="4.4.3" />
+    <ProjectReference Include="..\Mre.Sb.Appointment.Application.Contracts\Mre.Sb.Appointment.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Mre.Sb.UnidadAdministrativa.HttpApi.Client\Mre.Sb.UnidadAdministrativa.HttpApi.Client.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Feriado\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Feriado\" />
+  </ItemGroup>
+</Project>
